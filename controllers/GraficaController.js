@@ -5,7 +5,7 @@ let index = (req, res) => {
 }
 
 let graficas = (req, res) => {
-    request("https://interfazbt.onrender.com/apidashboard",(err,response,body)=>{
+    request("https://interfazbt2.onrender.com/apidashboard",(err,response,body)=>{
         if (!err){
             const data = JSON.parse(body);
             res.render('displays/graficas', { 
